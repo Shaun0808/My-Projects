@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<style>
+/* body{
+    background-color: #6c757d;
+} */
+.container {
+    display: flex;
+    margin-bottom: 3em;
+  }
+
+  li:hover {
+    /* text-shadow: white; */
+    text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black;
+
+  }
+
+  .main-container {
+    margin-bottom: 2em;
+  }
+  #card1:hover{
+    transform: translateY(0);
+    box-shadow: inset 0 0 60px whitesmoke,
+    0 0 30px #fff,
+    0px 0 0px rgb(70, 67, 70),
+    0px 0 0px rgb(120, 122, 122);
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  body{
+    background-color: #F4D03F;
+background-image: linear-gradient(132deg, #6b5e2c 0%, #16A085 50%, #081118 100%);
+
+  }
+  #main-page:hover {
+  transform: scale(1.2); /* You can adjust the scaling factor as needed */
+}
+#monuments:hover {
+  transform: scale(1.2); /* You can adjust the scaling factor as needed */
+}
+#flower:hover {
+  transform: scale(1.2); /* You can adjust the scaling factor as needed */
+}
+#car:hover {
+  transform: scale(1.2); /* You can adjust the scaling factor as needed */
+}
+  </style>
+  
+<body style="background-color: #6c757d;">
+   <div class="main-container">
+    <nav class="navbar navbar-expand-lg " style="background-color:rgb(69, 82, 82)">
+      <div class="container-fluid">
+          <!-- lg-4 is that when the scrren size is less than lg than there will be no 4 columns -->
+          <a class="navbar-brand col-lg-4" href="#" style="font-size: 2em; color: wheat;">Flower</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end navbar" id="navbarNav">
+              <ul class="navbar-nav ">
+                  <li class="nav-item">
+                      <a class="nav-link"  href="usingbootstrap.html"
+                          style="color: white;" id="main-page">Main-page</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="monuments.html" style="color: white;" id="monuments">Monuments</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="cars.html" style="color: white;" id="car">Cars</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+</div>
+</nav>
+      <div class="container" style="padding-top: 3em;" >
+      <div class="card-group" style="width:100%;">
+        <div class="card" style="margin-left: 2em; margin-top:2em ; margin-right: 2em;" id="card1">
+            <img src="imagesresponsive/flower1.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <!-- Daffodils -->
+              <h5 class="card-title">Daffodils</h5>
+              <p class="card-text">Daffodils, with vibrant yellow blooms and trumpet-shaped petals, herald the arrival of
+                spring. Symbolizing renewal, they thrive in gardens and are a classic choice for cheerful bouquets.</p>
+              <hr>
+              <a href="https://en.wikipedia.org/wiki/Narcissus_(plant)" class="btn btn-primary" tabindex="-1"
+                role="button" aria-disabled="true">Know More</a>
+            </div>
+          </div>
+    </div>
+    <div class="card" style="margin-left: 2em; margin-top:2em ;margin-right: 2em;" id="card1">
+        <img src="imagesresponsive/flower2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <!-- white flower -->
+          <h5 class="card-title">Pristine White</h5>
+          <p class="card-text">A pristine white flower symbolizes purity and elegance. Its petals, untainted by color,
+            radiate simplicity and grace. White flowers, like lilies or roses, evoke a sense of serenity and beauty.
+          </p>
+          <hr>
+          <a href="https://en.wikipedia.org/wiki/White_Flower" class="btn btn-primary" tabindex="-1"
+            role="button" aria-disabled="true">Know More</a>
+        </div>
+      </div>
+      <div class="card" style="margin-left: 2em; margin-top:2em ;margin-right: 2em;" id="card1">
+        <img src="imagesresponsive/flower3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <!-- Pink flower with a yellow center -->
+          <h5 class="card-title">Pink Flower</h5>
+          <p class="card-text">A delicate pink bloom with a vibrant yellow center symbolizes beauty and joy. Such
+            flowers, like peonies or daisies, add charm and color to gardens.</p>
+          <hr>
+          <a href="https://en.wikipedia.org/wiki/Pink_flowers" class="btn btn-primary" tabindex="-1"
+            role="button" aria-disabled="true">Know More</a>
+        </div>
+      </div>
+  </div>
+  <div class="container" style="padding-top:5em;">
+    <div class="card-group" style="width:100%;">
+        <div class="card" style="margin-left: 2em; margin-top:2em ;margin-right: 2em;" id="card1">
+            <img src="imagesresponsive/flower4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <!-- cheery blossom flower -->
+              <h5 class="card-title">Cherry Blossom</h5>
+              <p class="card-text">A small pink flower, such as a cherry blossom or rose, showcases delicate beauty and is
+                often associated with love, admiration, and grace in garden settings</p>
+              <hr>
+              <a href="https://en.wikipedia.org/wiki/Cherry_blossom" class="btn btn-primary" tabindex="-1"
+                role="button" aria-disabled="true">Know More</a>
+            </div>
+          </div>
+    </div>
+    <div class="card" style="margin-left: 2em; margin-top:2em ;margin-right: 2em; margin-bottom: 3em;" id="card1">
+        <img src="imagesresponsive/flower5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <!-- Pink rose -->
+          <h5 class="card-title">Pink Rose</h5>
+          <p class="card-text">The pink rose, a symbol of love and gratitude, comes in various shades. Its delicate
+            petals convey sweetness and appreciation, making it a popular choice for romantic gestures.</p>
+          <hr>
+          <a href="https://en.wikipedia.org/wiki/Pink_rose" class="btn btn-primary" tabindex="-1"
+            role="button" aria-disabled="true">Know More</a>
+        </div>
+      </div>
+</div>
+
+</body>
+</html>

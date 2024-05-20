@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<style>
+  .container {
+    display: flex;
+    margin-bottom: 3em;
+  }
+
+  li:hover {
+    /* text-shadow: white; */
+    text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black;
+
+  }
+
+  .main-container {
+    /* display: flex; */
+    margin-bottom: 2em;
+  }
+
+  #card1:hover {
+    transform: translateY(0);
+    box-shadow: inset 0 0 60px whitesmoke,
+      0 0 30px #fff,
+      0px 0 0px rgb(70, 67, 70),
+      0px 0 0px rgb(120, 122, 122);
+    transform: scale(1.1);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  body {
+    background-color: #F4D03F;
+    background-image: linear-gradient(132deg, #6b5e2c 0%, #16A085 50%, #081118 100%);
+
+  }
+  #main-page:hover {
+  transform: scale(1.2); /* You can adjust the scaling factor as needed */
+}
+#monuments:hover {
+  transform: scale(1.2); /* You can adjust the scaling factor as needed */
+}
+#flower:hover {
+  transform: scale(1.2); /* You can adjust the scaling factor as needed */
+}
+#car:hover {
+  transform: scale(1.2); /* You can adjust the scaling factor as needed */
+}
+</style>
+
+<body style="background-color:#6c757d;">
+  <div class="main-container">
+    <nav class="navbar navbar-expand-lg " style="background-color:rgb(69, 82, 82)">
+      <div class="container-fluid">
+          <!-- lg-4 is that when the scrren size is less than lg than there will be no 4 columns -->
+          <a class="navbar-brand col-lg-4" href="#" style="font-size: 2em; color: wheat;">Monuments</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end navbar" id="navbarNav">
+              <ul class="navbar-nav ">
+                  <li class="nav-item">
+                      <a class="nav-link"  href="usingbootstrap.html"
+                          style="color: white;" id="main-page">Main-page</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="flower.html" style="color: white;" id="flower">Flowers</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="cars.html" style="color: white;" id="car">Cars</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+</div>
+</nav>
+
+  <div class="container" style="padding-top: 1em;">
+    <div class="card-group">
+      <div class="card" style="margin-left: 2em; margin-top:2em ; margin-right: 2em; " id="card1">
+        <img src="imagesresponsive/monument1.jpg" height="80%" class="card-img-top" alt="...">
+        <div class="card-body">
+          <!-- Eiffel Tower -->
+          <h5 class="card-title">Effiel Tower</h5>
+          <p class="card-text">The Eiffel Tower, located in Paris, France, was completed in 1889. It stands at 324
+            meters, offering panoramic views of the city. A renowned symbol of French architecture.</p>
+          <hr>
+          <a href="https://en.wikipedia.org/wiki/Eiffel_Tower" class="btn btn-primary" tabindex="-1" role="button"
+            aria-disabled="true">Know More</a>
+        </div>
+      </div>
+    <div class="card" style="margin-left: 2em; margin-top:2em ; margin-right: 2em;" id="card1">
+      <!-- STATUTE OF LIBERTY -->
+      <img src="imagesresponsive/monument2.jpg" height="80%" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Statue of Liberty</h5>
+        <p class="card-text">The Statue of Liberty, a symbol of freedom and democracy, stands tall in New York
+          Harbor. Designed by Frédéric Auguste Bartholdi, it was dedicated on October 28, 1886.</p>
+        <hr>
+        <a href="https://en.wikipedia.org/wiki/Statue_of_Liberty" class="btn btn-primary" tabindex="-1" role="button"
+          aria-disabled="true">Know More</a>
+      </div>
+    </div>
+    <div class="card" style="margin-left: 2em; margin-top:2em ; margin-right: 2em;" id="card1">
+      <img src="imagesresponsive/monument3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Leaning tower of Pisa</h5>
+        <!-- leaning tower of Pisa -->
+        <p class="card-text">Leaning Tower of Pisa: Completed in 1372, this Italian landmark tilts due to
+          subsidence. Located in Piazza dei Miracoli, it's a UNESCO World Heritage Site, drawing visitors worldwide.
+        </p>
+        <hr>
+        <a href="https://en.wikipedia.org/wiki/Leaning_Tower_of_Pisa" class="btn btn-primary" tabindex="-1"
+          role="button" aria-disabled="true">Know More</a>
+       </div>
+     </div>
+    </div>
+  </div>
+
+
+
+  <div class="container" style="padding-top: 5em; margin-bottom: 5em;">
+    <div class="card-group" style="width:100%;" id="card2">
+      <div class="card" style="margin-left: 2em; margin-top:2em ; margin-right: 2em;" id="card1">
+        <img src="imagesresponsive/monument4.jpg" height="80%" class="card-img-top" alt="...">
+        <div class="card-body">
+          <!-- taj Mahal -->
+          <h5 class="card-title">Taj Mahal</h5>
+          <p class="card-text">The Taj Mahal, a UNESCO World Heritage Site, is an iconic white marble mausoleum in
+            Agra, India. Built by Emperor Shah Jahan in memory of his wife Mumtaz Mahal, it's a symbol of eternal
+            love, completed in 1653.</p>
+          <hr>
+          <a href="https://en.wikipedia.org/wiki/Taj_Mahal" class="btn btn-primary" tabindex="-1" role="button"
+            aria-disabled="true">Know More</a>
+        </div>
+      </div>
+      <div class="card" style="margin-left: 2em; margin-top:2em ; margin-right: 2em;" id="card1">
+        <img src="imagesresponsive/monument5.jpg" height="80%" class="card-img-top" alt="...">
+        <div class="card-body">
+          <!-- Colosseum in Rome -->
+          <h5 class="card-title">Colosseum in Rome</h5>
+          <p class="card-text">Colosseum in Rome: The Colosseum, built in AD 80, is an ancient Roman amphitheater.
+            Known for gladiator contests and public spectacles, it is an iconic symbol of Roman engineering and
+            history.</p>
+          <hr>
+          <a href="https://en.wikipedia.org/wiki/Colosseum" class="btn btn-primary" tabindex="-1" role="button"
+            aria-disabled="true">Know More</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
